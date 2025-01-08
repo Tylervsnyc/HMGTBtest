@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hudson's Pet Business</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Hudson's Pet Business</h1>
+    <p id="step-prompt">Start by filling in the daily income fields!</p>
+  </header>
+  <main>
+    <table id="pet-business">
+      <thead>
+        <tr>
+          <th>Day</th>
+          <th>Mr. Fluff Butt</th>
+          <th>Ant Farm</th>
+          <th>Daily Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Monday</td>
+          <td><input type="number" class="input-cell income" data-day="0" data-type="fluff" placeholder="Enter income"></td>
+          <td><input type="number" class="input-cell income" data-day="0" data-type="ant" placeholder="Enter income"></td>
+          <td><input type="number" class="input-cell daily-total" data-day="0" disabled placeholder="Fill in daily income first"></td>
+        </tr>
+        <!-- Repeat for other days -->
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">Weekly Total</td>
+          <td><input type="number" class="input-cell weekly-total" disabled placeholder="Complete daily totals first"></td>
+        </tr>
+      </tfoot>
+    </table>
+  </main>
+  <footer>
+    <p>&copy; 2025 Learn Through Stories</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
