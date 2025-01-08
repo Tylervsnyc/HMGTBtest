@@ -1,0 +1,91 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+header {
+  background: #004080;
+  color: white;
+  padding: 20px 10px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+header #step-prompt {
+  margin-top: 5px;
+  font-size: 1.2em;
+  color: #ffcc4d;
+}
+
+/* Table Styles */
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+thead th {
+  background: #0059b3;
+  color: white;
+  padding: 15px;
+  font-size: 1.2em;
+}
+
+tbody td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+tfoot td {
+  background: #004080;
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 10px;
+}
+
+/* Input Cells */
+input.input-cell {
+  width: 80%;
+  padding: 5px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input.input-cell:focus {
+  outline: none;
+  border: 2px solid #0059b3;
+}
+
+input.input-cell[placeholder]::placeholder {
+  font-size: 0.9em;
+  color: #aaa;
+}
+
+input.input-cell.green {
+  background: #d4edda; /* Green for correct */
+}
+
+input.input-cell.yellow {
+  background: #fff3cd; /* Yellow for incorrect */
+}
+
+footer {
+  margin-top: 20px;
+  padding: 10px;
+  background: #004080;
+  color: white;
+}
